@@ -18,11 +18,23 @@ const imageList = images.map(({ url, alt }) =>
   `<li ><img src="${url}" alt="${alt}" width='300' height ='150';
 ></li>`
 ).join('');
-galleryList.style.display = 'flex';
-galleryList.style.listStyle = 'none';
-galleryList.style.justifyContent = 'space-around';
-galleryList.style.boxShadow = "5px 5px 10px orange";
-galleryList.style.paddingLeft = '0px';
-galleryList.style.paddingTop = '5px';
+// galleryList.style.display = 'flex';
+// galleryList.style.listStyle = 'none';
+// galleryList.style.justifyContent = 'space-around';
+// galleryList.style.boxShadow = "5px 5px 10px orange";
+// galleryList.style.paddingLeft = '0px';
+// galleryList.style.paddingTop = '5px';
+Object.assign(
+  galleryList.style,
+  {
+    display: 'flex',
+    listStyle: 'none',
+    justifyContent: 'space-around',
+    boxShadow: "5px 5px 10px orange",
+    paddingLeft: '0px',
+    paddingTop: '5px',
+  }
+);
+
 galleryList.insertAdjacentHTML('beforeend', imageList);
 console.log(imageList);
