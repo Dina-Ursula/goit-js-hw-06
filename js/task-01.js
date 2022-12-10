@@ -1,5 +1,5 @@
 const itemEl = document.querySelector('#categories');
-// console.log(itemEl);
+
 const listItemEl = itemEl.children;
 console.log(`Number of categories: ${listItemEl.length}`);
 
@@ -11,5 +11,3 @@ for (let i = 0; i < listItemEl.length; i+=1) {
     
 }
 
-
-// console.log(`Category: ${listItemEl.value}`);
